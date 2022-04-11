@@ -1,0 +1,130 @@
+.principal{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2cm;
+    background-image: url(./Imágenes/fondo1.JPG);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    box-sizing: content-box;
+    width: auto;
+    height:100vh;
+}
+.titulo{
+    position: relative;
+    top: 6px;
+    background: -webkit-linear-gradient(90deg, rgba(235,180,107,1) 28%, rgba(148,187,233,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.9;
+    overflow: visible;
+}
+header{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    font-size:xx-large;
+    background-color: rgba(252, 248, 243, 0.2);
+    padding-bottom: 0.01%;
+}
+nav{
+    font-size: large;
+    text-align-last: left;
+    display:flex;
+    color: whitesmoke;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Bebas Neue', cursive;
+    font-size: larger;
+    border: 0%;
+    background: rgb(235,180,107);
+    background: linear-gradient(0deg, rgba(235,180,107,1) 28%, rgba(148,187,233,1) 100%);
+    overflow: auto;
+}
+main{
+    padding: 2%;
+    margin: 0%;
+}
+.imagen{
+    padding: 2px;
+    border-radius: 10px;
+    background:whitesmoke;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    max-height:max-content;
+}
+footer{
+    padding: 2px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    background-color: black;
+    color: whitesmoke;
+}
+.button{
+    padding:3px 3px;
+    transition: all .3s;
+}
+.button:hover{
+    font-size: larger;
+}
+p{
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+}
+.centrar{
+    text-align: center;
+}
+.textoprin{
+    background-color: rgba(252, 248, 243, 0.1);
+    margin: 4px;
+    padding: 5px;
+    height: auto;
+    flex: 40%;
+}
+#principal{
+    background: rgb(235,180,107);
+    background: linear-gradient(0deg, rgba(235,180,107,1) 28%, rgba(148,187,233,1) 100%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.mapa{
+    max-width: 100%;
+    max-height: auto;
+}
+
+@media screen and (max-width: 300px) {
+    .titulo{
+        font-size: 2.5cm;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    .titulo{
+        font-size: 3cm;
+    }    
+}
+
+@media screen and (max-width: 654px) {
+    .titulo{
+        font-size: 3.5cm;
+    }    
+}
+
+@media screen and (min-width: 700px) {
+    .principal {
+        background-size: 100% 100%;
+    }   
+}
