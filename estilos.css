@@ -12,27 +12,35 @@
     height:100vh;
 }
 .titulo{
+    font-family: 'Dosis', sans-serif;
     position: relative;
-    top: 6px;
-    background: -webkit-linear-gradient(90deg, rgba(235,180,107,1) 28%, rgba(148,187,233,1) 100%);
+    background:rgb(245, 245, 245);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0.9;
-    overflow: visible;
+    overflow: hidden;
 }
 header{
     text-align: center;
     font-family: 'Bebas Neue', cursive;
     text-transform: uppercase;
-    font-size:xx-large;
+    font-size:x-large;
     background-color: rgba(252, 248, 243, 0.2);
-    padding-bottom: 0.01%;
+    display: flexbox;
 }
 nav{
     font-size: large;
     text-align-last: left;
-    display:flex;
-    color: whitesmoke;
+    display: flex;
+    align-content: space-evenly;
+}
+.button{
+    padding:3px 3px;
+    transition: all .3s;
+    position: inherit;
+}
+/* transición de los botones*/
+.button:hover{
+    color: rgb(240, 240, 240);
 }
 a{
     text-decoration: none;
@@ -47,11 +55,12 @@ body{
     border: 0%;
     background: rgb(235,180,107);
     background: linear-gradient(0deg, rgba(235,180,107,1) 28%, rgba(148,187,233,1) 100%);
-    overflow: auto;
+    overflow:auto;
 }
 main{
-    padding: 2%;
+    padding-left: 2%;
     margin: 0%;
+    padding-bottom: 2%;
 }
 .imagen{
     padding: 2px;
@@ -69,13 +78,6 @@ footer{
     background-color: black;
     color: whitesmoke;
 }
-.button{
-    padding:3px 3px;
-    transition: all .3s;
-}
-.button:hover{
-    font-size: larger;
-}
 p{
     text-align: justify;
     font-family: 'Open Sans', sans-serif;
@@ -84,6 +86,7 @@ p{
 .centrar{
     text-align: center;
 }
+
 .textoprin{
     background-color: rgba(252, 248, 243, 0.1);
     margin: 4px;
@@ -92,8 +95,11 @@ p{
     flex: 40%;
 }
 #principal{
+    padding: 2%;
     background: rgb(235,180,107);
     background: linear-gradient(0deg, rgba(235,180,107,1) 28%, rgba(148,187,233,1) 100%);
+    display: flex;
+    flex-direction: column;
 }
 .container{
     display: flex;
@@ -105,26 +111,83 @@ p{
     max-height: auto;
 }
 
-@media screen and (max-width: 300px) {
-    .titulo{
-        font-size: 2.5cm;
-    }    
+.subtitulo{
+    display:flexbox;
+    transition: all 0.5s;
 }
 
-@media screen and (max-width: 400px) {
-    .titulo{
-        font-size: 3cm;
-    }    
-}
-
-@media screen and (max-width: 654px) {
-    .titulo{
-        font-size: 3.5cm;
-    }    
+/* transición*/
+.subtitulo:hover{
+    color: rgb(148, 146, 146);
 }
 
 @media screen and (min-width: 700px) {
     .principal {
         background-size: 100% 100%;
     }   
+}
+
+@media screen and (min-width: 800px) {
+    .titulo{
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .titulo{
+        font-size: 3cm;
+        top: 50px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .titulo{
+        font-size: 2cm;
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .titulo{
+        font-size: 2.4cm;
+    }
+}
+
+.boton-formulario{
+    background-color: rgba(252, 248, 243, 0.479);
+    color: black;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size:large;
+    align-items: center;
+    border: none;
+    display: flexbox;
+    transition: all 0.5s;
+}
+
+/* transición*/
+.boton-formulario:hover{
+    background-color: black;
+    color: whitesmoke;
+}
+
+#btn-lugares{
+    display: flexbox;
+    font-weight: bold;
+}
+#btn-lugares:hover{
+    animation: animate__pulse;
+    animation-duration: 3s;
+}
+
+.formulario{
+    display:inline-flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+form{
+    display: inline-flex;
+    flex-direction: column;
 }
